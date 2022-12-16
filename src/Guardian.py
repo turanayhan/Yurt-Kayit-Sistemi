@@ -5,3 +5,6 @@ class Guardian:
         self.g_surname = g_surname
         self.g_gsm = g_gsm
         self.g_address = g_address
+
+    def full_name(self):
+        return f"{self.g_name} {self.g_surname}"

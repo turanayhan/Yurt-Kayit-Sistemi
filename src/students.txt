@@ -1,0 +1,14 @@
+Ad Soyad : turan Ayhan
+yaş : 23
+Tc Kimlik No: 60940508158
+Gsm : 05452590511
+Mail : duranayhan57@gmail.com
+Kayıtlı Okul : inönü
+Okuduğu Bölüm : bilgisayar
+Veli Ad Soyad : ibrahim ayhan
+Veli Gsm : ibrahim ayhan
+Veli Ad : yaka mahallesi tekdal sokak no 23
+
+
+
+
