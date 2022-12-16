@@ -32,32 +32,26 @@ while True:
 
     secim = int(input("Lütfen Yapmak İstediğiniz İşlem Seçiniz (0-7):"))
 
-
-    if secim==1:
+    if secim == 1:
 
         addStudent()
 
-    elif secim==2:
+    elif secim == 2:
 
         deleteStudent()
 
-    elif secim==3:
+    elif secim == 3:
 
         callStudent()
 
-    elif secim==4:
+    elif secim == 4:
 
         getStudentsList()
 
-    elif secim==5:
+    elif secim == 5:
 
         studentUpdade()
 
     else:
         print("Lütfen Geçerli bir sayı giriniz")
         continue
-
-
-
-
-

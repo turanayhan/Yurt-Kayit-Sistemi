@@ -38,7 +38,7 @@ class StudentRegistration(object):
               f'{self.guardian.g_surname}\n{self.guardian.g_gsm}\nt')
 
     def set_data(self, student, guardian):
-        db = open("students.txt", "a", encoding="utf-8")
+        db = open("data/students.txt", "a", encoding="utf-8")
         db.write("Ad Soyad : "+student.full_name()+"\n")
         db.write("yaş : "+student.age+"\n")
         db.write("Tc Kimlik No: " + student.identification_number + "\n")
