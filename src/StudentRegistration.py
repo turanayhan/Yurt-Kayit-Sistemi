@@ -32,15 +32,11 @@ class StudentRegistration(object):
         self.set_data(self.student, self.guardian)
 
     def getStudent(self):
-        print(f'{self.student.name}\n{self.student.surname}\n'
-              f'{self.student.age}\n{self.student.date_of_birth}\n'
-              f'{self.student.school}\n{self.student.surname}\n'
-              f'{self.student.identification_number}\n{self.guardian.g_name}\n'
-              f'{self.guardian.g_surname}\n{self.guardian.g_gsm}\nt')
+        pass
 
     def set_data(self, student, guardian):
 
         students= DataPush
-        students.data_regsiter(student.full_name(),student.age,student.identification_number,student.gsm,student.mail,student.school,student.section_name,"ibo","sagvs")
+        students.data_regsiter(student.full_name(),student.age,student.identification_number,student.gsm,student.mail,student.school,student.section_name,"ibo",guardian.full_name(),guardian.g_gsm,guardian.g_address)
 
 
