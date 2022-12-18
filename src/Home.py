@@ -2,9 +2,14 @@ from src.StudentRegistration import StudentRegistration
 
 
 def addStudent():
+    print("Öğrenci Kayıt Ekranı..\n")
     turan = StudentRegistration()
     turan.register()
-    print("Öğrenci başarılı bir şekilde kaydedildi")
+    print("Öğrenci başarılı bir şekilde kaydedildi\n")
+    menu()
+
+
+
 
 
 def deleteStudent():
@@ -23,35 +28,41 @@ def studentUpdade():
     pass
 
 
-while True:
-    print("1-Öğrenci Ekle")
-    print("2-Öğrenci sil")
-    print("3-Temizlik Personeli Kayıt")
-    print("4-Tümünü Listele")
-    print("5-Güncelleme")
 
-    secim = int(input("Lütfen Yapmak İstediğiniz İşlem Seçiniz (0-7):"))
+def menu():
+    while True:
+        print("1-Öğrenci Ekle")
+        print("2-Öğrenci sil")
+        print("3-Temizlik Personeli Kayıt")
+        print("4-Tümünü Listele")
+        print("5-Güncelleme")
 
-    if secim == 1:
+        secim = input("Lütfen Yapmak İstediğiniz İşlem Seçiniz (0-7):\n")
 
-        addStudent()
+        if secim == "1":
 
-    elif secim == 2:
+            addStudent()
+            break
 
-        deleteStudent()
+        elif secim == "2":
 
-    elif secim == 3:
+            deleteStudent()
 
-        callStudent()
+        elif secim == "3":
 
-    elif secim == 4:
+            callStudent()
 
-        getStudentsList()
+        elif secim == "4":
 
-    elif secim == 5:
+            getStudentsList()
 
-        studentUpdade()
+        elif secim == "5":
 
-    else:
-        print("Lütfen Geçerli bir sayı giriniz")
-        continue
+            studentUpdade()
+
+        else:
+            print("\nMenu elemanlarından birini seçiniz...\n")
+            continue
+
+
+menu()

@@ -1,0 +1,21 @@
+<Student id="1">
+    <Tc>sbr</Tc>
+    <Name>b</Name>
+    <Age>s</Age>
+    <Gsm>sbrsrb</Gsm>
+    <Mail>sb</Mail>
+    <School>rb</School>
+    <Section>ibo</Section>
+    <Gname>sagvs</Gname>
+</Student>
+
+<Student id="1"
+><Tc>0544534535</Tc>
+<Name>23</Name>
+<Age>60940508158</Age>
+<Gsm>duranayhan57@gmail</Gsm>
+<Mail>in&#246;n&#252;</Mail>
+<School>bilgisayar m&#252;hend</School>
+<Section>ibo</Section>
+<Gname>sagvs</Gname>
+</Student>
