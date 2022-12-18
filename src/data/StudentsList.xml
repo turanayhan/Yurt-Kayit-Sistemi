@@ -1,26 +1,10 @@
-<Student id="1">
-    <Tc>hd</Tc>
-    <Name>hd</Name>
-    <Age>hr</Age>
-    <Gsm>hddh</Gsm>
-    <Mail>dh</Mail>
-    <School>d</School>
-    <Section>ibo</Section>
-    <Gname>dth dth</Gname>
-    <Ggsm>dhtdth</Ggsm>
-    <Gaddress>hdts</Gaddress>
-</Student>
+<data>
 
-<Student id="1">
-<Tc>05452590511</Tc>
-<Name>23</Name>
-<Age>60940508158</Age>
-<Gsm>duranayhan57@gmail.com</Gsm>
-<Mail>in&#246;n&#252;</Mail>
-<School>bilgisayar</School>
-<Section>ibo</Section>
-<Gname>ibo ayhan</Gname>
-<Ggsm>05366307326</Ggsm>
-<Gaddress>yaka mahallesi tekdal sokak no 23</Gaddress>
 
-</Student>
+    <Student id="1"><Tc>nd</Tc><Name>dfb</Name><Age>sdfb</Age><Gsm>n</Gsm><Mail>d</Mail><School>n</School><Section>ibo</Section><Gname>dndnd nd</Gname><Ggsm>nd</Ggsm><Gaddress>ndnd</Gaddress></Student>
+
+
+</data>
+
+
+<data><Student id="1"><Tc>hd</Tc><Name>d</Name><Age>g</Age><Gsm>sh</Gsm><Mail>dth</Mail><School>d</School><Section>ibo</Section><Gname>j dsj</Gname><Ggsm>dj</Ggsm><Gaddress>d</Gaddress></Student></data><data><Student id="1"><Tc>td</Tc><Name>h</Name><Age>grd</Age><Gsm>jdt</Gsm><Mail>hjd</Mail><School>tj</School><Section>ibo</Section><Gname> t</Gname><Ggsm>dh</Ggsm><Gaddress>d</Gaddress></Student></data>

@@ -2,7 +2,8 @@ import xml.etree.ElementTree as ET
 
 
 def data_regsiter(self, name_, age_, idenity_, gsm_, mail_, school_, section_, g_name_,g_gsm_,g_address_):
-    data = ET.Element('Student')
+    data1 = ET.Element('data')
+    data=ET.SubElement(data1 ,'Student')
     data.set('id', "1")
 
     idenity = ET.SubElement(data, 'Tc')
@@ -27,7 +28,8 @@ def data_regsiter(self, name_, age_, idenity_, gsm_, mail_, school_, section_, g
     g_gsm.text=g_gsm_
     g_address.text=g_address_
 
-    db = ET.tostring(data)
+    db = ET.tostring(data1)
 
     with open("data/StudentsList.xml", "ab") as f:
+
         f.write(db)
