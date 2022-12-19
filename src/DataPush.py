@@ -1,5 +1,7 @@
 import xml.etree.ElementTree as ET
 
+from datetime import date
+
 
 def data_regsiter(self, name_, age_, idenity_, gsm_, mail_, school_, section_, g_name_,g_gsm_,g_address_):
     data1 = ET.Element('data')
@@ -16,6 +18,8 @@ def data_regsiter(self, name_, age_, idenity_, gsm_, mail_, school_, section_, g
     g_name = ET.SubElement(data, 'Gname')
     g_gsm = ET.SubElement(data, 'Ggsm')
     g_address=ET.SubElement(data, 'Gaddress')
+    date_register = ET.SubElement(data, 'DateRegistration')
+
 
     idenity.text = idenity_
     name.text = name_
@@ -27,6 +31,7 @@ def data_regsiter(self, name_, age_, idenity_, gsm_, mail_, school_, section_, g
     g_name.text = g_name_
     g_gsm.text=g_gsm_
     g_address.text=g_address_
+    date_register.text=date.today()
 
     db = ET.tostring(data1)
 
