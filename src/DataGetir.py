@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as xml
 from datetime import date
-veriler = xml.parse("data/StudentsList.xml")
+veriler = xml.parse("data/Ogrenciler.xml")
 
 
 kok = veriler.getroot()

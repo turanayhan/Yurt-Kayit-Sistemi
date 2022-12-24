@@ -1,68 +1,71 @@
-from src.StudentRegistration import StudentRegistration
+from src.OgrenciKayıt import OgrenciKayıt
 
 
-def addStudent():
+def ogrenci_ekle():
     print("Öğrenci Kayıt Ekranı..\n")
-    turan = StudentRegistration()
-    turan.register()
+    turan = OgrenciKayıt()
+    turan.kayıt()
     print("Öğrenci başarılı bir şekilde kaydedildi\n")
+
     menu()
 
 
 
 
 
-def deleteStudent():
+def ogrenciSil():
     pass
 
 
-def callStudent():
+def ogrenciAra():
     pass
 
 
-def getStudentsList():
+def ogrenciGuncelle():
+    pass
+
+def tumunuListele():
     pass
 
 
-def studentUpdade():
-    pass
 
-
-
-def menu():
+def personelmenu():
     while True:
-        print("1-Öğrenci Ekle")
-        print("2-Öğrenci sil")
-        print("3-Temizlik Personeli Kayıt")
-        print("4-Tümünü Listele")
-        print("5-Güncelleme")
+        print("1-Yeni Öğrenci Kayıt")
+        print("2-Öğrenci kaydı sil")
+        print("3-Öğrenci Ara")
+        print("4-Tüm Öğrencileri Listele")
+        print("5-Öğrenci Güncelle")
 
         secim = input("Lütfen Yapmak İstediğiniz İşlem Seçiniz (0-7):\n")
 
         if secim == "1":
 
-            addStudent()
+            ogrenci_ekle()
             break
 
         elif secim == "2":
 
-            deleteStudent()
+            ogrenciSil()
 
         elif secim == "3":
 
-            callStudent()
+            ogrenciAra()
 
         elif secim == "4":
 
-            getStudentsList()
+            tumunuListele()
 
         elif secim == "5":
 
-            studentUpdade()
+            ogrenciGuncelle()
+
 
         else:
             print("\nMenu elemanlarından birini seçiniz...\n")
             continue
 
 
-menu()
+personelmenu()
+
+def 
