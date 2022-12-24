@@ -29,7 +29,7 @@ def tumunuListele():
 
 
 
-def personelmenu():
+def menu():
     while True:
         print("1-Yeni Öğrenci Kayıt")
         print("2-Öğrenci kaydı sil")
@@ -66,6 +66,4 @@ def personelmenu():
             continue
 
 
-personelmenu()
-
-def 
+menu()
