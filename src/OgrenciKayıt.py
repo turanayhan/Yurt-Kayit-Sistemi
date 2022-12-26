@@ -1,53 +1,35 @@
 from src import OgrenciDbKayıt
 from src.Ogrenci import Ogrenci
 
-import datetime
 
 
-
-class OgrenciKayıt(object):
+class OgrenciKayıt():
 
     def __init__(self):
-        self.ogrenci = Ogrenci("", "", "", "", "", "", "", "", "","","","","","")
+        self.ogrenci = Ogrenci("", "", "", "", "", "", "", "", "","","","")
 
 
-    def kayıt(self):
-        print("Öğrencinin..\n")
-        ad = input(" Adı : ")
-        soyad = input(" Soyad : ")
-        tc = input(" Tc kimlik : ")
-        yas = input(" Yaşı : ")
-        dogum_tarihi = input(" Doğum tarihi : ")
-        okul = input(" Okulu : ")
-        bolum = input(" Okuduğu Bölüm : ")
-        ogrenci_tel = input(" Telefon Numarası : ")
-        mail = input(" e posta adresi giriniz: ")
-        veli_ad = input(" Veli Adı: ")
-        veli_soyad = input(" Veli Soyad: ")
-        veli_telefon = input(" Veli Telefon: ")
-        veli_address = input(" Veli Address: ")
-        kayit_tarihi = str(datetime.date.today())
 
-
+    def kayıt(self,ad,tc,yas,dogum_tarihi,okul,bolum,ogrenci_tel,mail,veli_ad,veli_telefon,veli_address,kayit_tarihi):
 
 
 
         self.ogrenci = Ogrenci(ad.capitalize(),
-                               soyad.capitalize(),
                                tc.capitalize(),
                                yas.capitalize(),
-                               dogum_tarihi.capitalize(),
+                               str(dogum_tarihi.capitalize()),
                                okul.capitalize(),
                                bolum.capitalize(),
                                ogrenci_tel.capitalize(),
                                mail.capitalize(),
                                kayit_tarihi,
                                veli_ad.capitalize(),
-                               veli_soyad.capitalize(),
                                veli_telefon.capitalize(),
-                               veli_address.capitalize())
+                               veli_address.capitalize(),)
 
         self.set_data(self.ogrenci)
+
+
 
     def getStudent(self):
         pass

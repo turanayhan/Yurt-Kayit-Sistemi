@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from datetime import date
 
 
-def data_kaydet(ad_, yas_, tc_, dg_tarihi_, okul_, bolum_, gsm_, mail_,veli_ad_,veli_gsm_,veli_address_,kayit_tarihi_):
+def data_kaydet(ad_, tc_, yas_, dg_tarihi_, okul_, bolum_, gsm_, mail_,veli_ad_,veli_gsm_,veli_address_,kayit_tarihi_):
     data1 = ET.Element('data')
     data=ET.SubElement(data1 ,'Student')
     data.set('id', tc_)

@@ -1,12 +1,17 @@
+from src import Tks
 from src.OgrenciKayıt import OgrenciKayıt
+from src.Tks import Tk
+import xml.etree.ElementTree as xml
+from datetime import date
+
 
 
 def ogrenci_ekle():
-    print("Öğrenci Kayıt Ekranı..\n")
-    turan = OgrenciKayıt()
-    turan.kayıt()
-    print("Öğrenci başarılı bir şekilde kaydedildi\n")
 
+
+    print("Öğrenci Kayıt Ekranı..\n")
+
+    Tks.pencere_ac()
     menu()
 
 
@@ -31,11 +36,12 @@ def tumunuListele():
 
 def menu():
     while True:
-        print("1-Yeni Öğrenci Kayıt")
-        print("2-Öğrenci kaydı sil")
-        print("3-Öğrenci Ara")
-        print("4-Tüm Öğrencileri Listele")
-        print("5-Öğrenci Güncelle")
+
+
+        menu_veri = xml.parse("data/menu.xml")
+        kok = menu_veri.getroot()
+        for altseviye in kok:
+            print(altseviye.text)
 
         secim = input("Lütfen Yapmak İstediğiniz İşlem Seçiniz (0-7):\n")
 
