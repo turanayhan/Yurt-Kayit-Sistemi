@@ -14,8 +14,7 @@ class Admin(object):
         pass
 
 
-    def kuyruktan_ekle(self):
-        pass
+
 
     def ogrenci_ekle(self):
 
@@ -30,9 +29,7 @@ class Admin(object):
     def ogrenciSil(self):
         tc = input("Silmek  istediğiniz öğrencinin tc kimlik numarasını giriniz : \n")
         DeleteData().delete_student(tc)
-        self.kuyruktan_ekle()
         print("Öğrenci kaydı silindi..")
-
         input("Çıkamk için herhangi bir tuşa basınız : \n")
 
     def ogrenciAra(self):

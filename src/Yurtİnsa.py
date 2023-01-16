@@ -111,8 +111,3 @@ class Yks:
     def insan_sil(self,tc):
         self.yurt.insanSil(tc)
 
-deneme = Yurtinsa("Eşref bitlis", ["no1", "no2", "no3"], [2, 4, 6]).yurt
-yurt_kayit = Yks(deneme)
-yurt_kayit.insan_ekle(234234)
-
-print(oda(23,2).getThisOda())

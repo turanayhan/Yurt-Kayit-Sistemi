@@ -9,6 +9,9 @@ class DbPush:
 
     def student_kaydet(self, ad_, tc_, yas_, dg_tarihi_, okul_, bolum_, gsm_, mail_, veli_ad_, veli_gsm_, veli_address_,
                        kayit_tarihi_):
+
+
+
         studentData = ET.parse("data/database.xml")
         # En üst seviye XML etiketinin ne olduğunu bulalım
         kok = studentData.getroot()
