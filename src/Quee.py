@@ -1,15 +1,10 @@
-import xml.etree.ElementTree as ET
-
-from datetime import date
-
-
 class DbPush:
     def __init__(self):
         pass
 
     def student_kaydet(self, ad_, tc_, yas_, dg_tarihi_, okul_, bolum_, gsm_, mail_, veli_ad_, veli_gsm_, veli_address_,
-                       kayit_tarihi_):
-        studentData = ET.parse("data/database.xml")
+                    kayit_tarihi_):
+        studentData = ET.parse("data/yedekler.xml")
         # En üst seviye XML etiketinin ne olduğunu bulalım
         kok = studentData.getroot()
         # Eleman eklemek
@@ -28,7 +23,7 @@ class DbPush:
             veli_address = ET.SubElement(ogrenci, 'VeliAddress')
             kayıt_tarihi = ET.SubElement(ogrenci, 'KayitTarihi')
 
-            # değerleri atıyoruz
+            #değerleri atıyoruz
 
             tc.text = tc_
             ad.text = ad_
@@ -43,10 +38,11 @@ class DbPush:
             veli_address.text = veli_address_
             dogum_tarihi.text = dg_tarihi_
             kayıt_tarihi.text = kayit_tarihi_
-            studentData.write("data/database.xml", encoding="UTF-8")
+            studentData.write("data/yedekler.xml", encoding="UTF-8")
 
-    def Personal_kaydet(self, ad_, tc_, yas_, dg_tarihi_, unvan_, gorevi_, mail_):
-        personalData = ET.parse("data/database.xml")
+
+    def Personal_kaydet(self,ad_, tc_, yas_, dg_tarihi_, unvan_,gorevi_,mail_):
+        personalData = ET.parse("data/yedekler.xml")
         # En üst seviye XML etiketinin ne olduğunu bulalım
         kok = personalData.getroot()
 
@@ -65,6 +61,6 @@ class DbPush:
             yas.text = yas_
             dg_tarihi.text = dg_tarihi_
             mail.text = mail_
-            unvan.text = unvan_
-            gorevi.text = gorevi_
-            personalData.write("data/database.xml", encoding="UTF-8")
+            unvan.text=unvan_
+            gorevi.text=gorevi_
+            personalData.write("data/yedekler.xml", encoding="UTF-8")

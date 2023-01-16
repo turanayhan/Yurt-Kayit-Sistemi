@@ -4,14 +4,23 @@ from src.DeleteData import DeleteData
 from src.GetData import GetData
 from src.WindowPersonal import WindowPersonal
 from src.WindowStudent import WindowStudent
+from src.Yurtİnsa import Yurtinsa, Yks
 
 
 class Admin(object):
 
     def __init__(self):
         self.admin()
+        pass
+
+
+    def kuyruktan_ekle(self):
+        pass
 
     def ogrenci_ekle(self):
+
+
+
 
         print("Öğrenci Kayıt Ekranı..\n")
         studentpencere = WindowStudent()
@@ -21,6 +30,7 @@ class Admin(object):
     def ogrenciSil(self):
         tc = input("Silmek  istediğiniz öğrencinin tc kimlik numarasını giriniz : \n")
         DeleteData().delete_student(tc)
+        self.kuyruktan_ekle()
         print("Öğrenci kaydı silindi..")
 
         input("Çıkamk için herhangi bir tuşa basınız : \n")
@@ -54,7 +64,8 @@ class Admin(object):
         print("Personal Kayıt Ekranı..\n")
         personal_pencere = WindowPersonal()
         personal_pencere.pencere_ac()
-        self.student_menu()
+        print(personal_pencere.getTc())
+        self.personal_menu()
 
     def personal_ara(self):
         secim = input("Ulaşmak istediğiniz personelin tc kimlik numarasını giriniz : \n")
@@ -139,4 +150,3 @@ class Admin(object):
 
             else:
                 print("bilgilerinizi kontrol ediniz..")
-

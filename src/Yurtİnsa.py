@@ -1,5 +1,4 @@
 
-
 class oda():
     def __init__(self,yatak_Sayisi,odaNo):
         self.odaNo=str(odaNo)
@@ -99,9 +98,7 @@ class Yurtinsa:
             self.yurt.odaEkle(oda(yatak_sayısı[x],oda_no[x]))
 
 
-deneme=Yurtinsa("Eşref bitlis",["no1","no2","no3"],[2,4,6])
 
-print(deneme.yurt.odalar[0].odaNo)
 
 
 class Yks:
@@ -114,3 +111,8 @@ class Yks:
     def insan_sil(self,tc):
         self.yurt.insanSil(tc)
 
+deneme = Yurtinsa("Eşref bitlis", ["no1", "no2", "no3"], [2, 4, 6]).yurt
+yurt_kayit = Yks(deneme)
+yurt_kayit.insan_ekle(234234)
+
+print(oda(23,2).getThisOda())

@@ -7,6 +7,8 @@ import datetime
 class WindowStudent(tkinter.Tk):
 
     def __init__(self):
+
+        self.tc_no=""
         super().__init__()
         self.geometry("360x700")
         self.title("Öğrenci Kayıt Ekanı")
@@ -84,6 +86,8 @@ class WindowStudent(tkinter.Tk):
 
 
     def kaydet(self):
+
+        self.tc_no=self.tc.get()
         og_kayıt =SaveData()
         bugun = str(datetime.datetime.today())
 
@@ -101,6 +105,8 @@ class WindowStudent(tkinter.Tk):
                         self.cv.get().casefold(), self.bolum.get().capitalize(),
                         self.ogrenci_gsm.get().capitalize(), self.mail.get().capitalize(), self.veli_ad.get().capitalize(), self.veli_gsm.get(),
                         self.veli_address.get(), bugun)
+
+
             print("Öğrenci başarılı bir şekilde kaydedildi\n")
             messagebox.showinfo("durum", "Öğrenci Başarılı bir şekilde kaydedildi..")
 
@@ -108,15 +114,9 @@ class WindowStudent(tkinter.Tk):
 
 
 
-
-
-
-
-
-
-
     def pencere_ac(self):
         self.mainloop()
 
 
-
+    def getTc(self):
+        return  self.tc_no

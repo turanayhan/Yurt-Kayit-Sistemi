@@ -9,6 +9,7 @@ class WindowPersonal(tkinter.Tk):
 
     def __init__(self):
 
+        self.tc_no = ""
         super().__init__()
         self.geometry("360x550")
         self.title("Personel Kayıt Ekanı")
@@ -69,6 +70,7 @@ class WindowPersonal(tkinter.Tk):
 
 
     def kaydet(self):
+        self.tc_no=self.tc.get()
         personalKayıt = SaveData()
         bugun = str(datetime.datetime.today())
         if ((self.ad.get() == "") or (self.tc.get() == "") or (self.yas.get() == "") or (self.dogum_tarihi.get() == "") or (self.bolum.get() == "") or
@@ -95,6 +97,8 @@ class WindowPersonal(tkinter.Tk):
     def pencere_ac(self):
         self.mainloop()
 
+    def getTc(self):
+        return  self.tc_no
 
 
 
