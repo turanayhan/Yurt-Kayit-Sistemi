@@ -4,7 +4,7 @@ from src.DeleteData import DeleteData
 from src.GetData import GetData
 from src.WindowPersonal import WindowPersonal
 from src.WindowStudent import WindowStudent
-from src.Yurtİnsa import Yurtinsa, Yks
+
 
 
 class Admin(object):

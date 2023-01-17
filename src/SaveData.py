@@ -4,6 +4,7 @@ from src.Quee import Quee
 from src.Student import Student
 
 
+
 class SaveData():
     def __init__(self):
         self.okuma=open("data/capacity.txt","r").read()
