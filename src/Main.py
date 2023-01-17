@@ -1,4 +1,4 @@
 from src.Admin import Admin
 
-#proje burdan başlatılıyor
+#proje burdan başlatılıyo
 Admin()
