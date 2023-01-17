@@ -1,5 +1,7 @@
 from xml.etree.ElementTree import ElementTree
 
+from src.QueePop import QueePop
+
 
 class DeleteData:
   def __init__(self):
@@ -29,8 +31,14 @@ class DeleteData:
         personal.remove(child)
 
     self.tree.write("data/database.xml", encoding="UTF-8")
+    QueePop().kuyruktan_sil()
+    print("yedek listesinden asil kayıt yapıldı")
 
 
 
 
-DeleteData().delete_personal(2523)
+
+
+
+
+

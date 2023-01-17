@@ -44,7 +44,7 @@ class SaveData():
                 student.getVeli_gsm(),
                 student.getVeli_address(),
                 student.getKayıt_tarihi())
-            
+
 
 
 

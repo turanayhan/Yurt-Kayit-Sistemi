@@ -1,18 +1,34 @@
 from xml.etree.ElementTree import ElementTree
-class Queepop:
-  def __init__(self):
-    self.tree = ElementTree()
-    self.tree.parse('data/yedekler.xml')
+
+from src.DbPush import DbPush
 
 
-  def delete_personal(self):
-    personals = self.tree.findall('Öğrenciler')
-    for personal in personals:
-      childs = personal.findall(id)
-      for child in childs:
+class QueePop:
+    def __init__(self):
+        self.tree = ElementTree()
+        self.tree.parse('data/yedekler.xml')
 
-        personal.remove(child)
+    def kuyruktan_sil(self):
+        Yedekler = self.tree.findall('Öğrenciler')
 
-    self.tree.write("data/database.xml", encoding="UTF-8")
+        for yedek in Yedekler:
+
+            print(yedek[0].find('Tc').text)
+
+            #kuyruktaki ilk elamanı database ekliyor
+
+            DbPush().student_kaydet(yedek[0].find('Ad').text, yedek[0].find('Tc').text, yedek[0].find('Yas').text,
+                                    yedek[0].find('DogumTarihi').text, yedek[0].find('Okul').text,
+                                    yedek[0].find('Bolum').text, yedek[0].find('Gsm').text, yedek[0].find('Mail').text,
+                                    yedek[0].find('VeliAd').text,
+                                    yedek[0].find('VeliGsm').text, yedek[0].find('VeliAddress').text,
+                                    yedek[0].find('KayitTarihi').text
+                                    )
+
+            for child in range(1):
+                yedek.remove(yedek[child])
+
+        self.tree.write("data/yedekler.xml", encoding="UTF-8")
+
 
 
