@@ -3,12 +3,14 @@ from src.Personal import Personal
 from src.Student import Student
 
 
+#verileri xmlden almamıza yarayan sınıf
 class GetData:
 
     def __init__(self):
         self.data = xml.parse("data/database.xml")
 
     def personal_bul(self, tc_no):
+        #tc kimlik numarasına göre arama yapan fonksiyon
         kok = self.data.getroot().iter("Personeller")
 
         for child in kok:
@@ -26,6 +28,7 @@ class GetData:
             return personal
 
     def student_bul(self, tc_no):
+        # tc kimlik numarasına göre arama yapan fonksiyon
         kok = self.data.getroot().iter("Öğrenciler")
 
         for child in kok:

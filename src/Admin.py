@@ -1,38 +1,30 @@
 import xml.etree.ElementTree as xml
-
 from src.DeleteData import DeleteData
 from src.GetData import GetData
 from src.WindowPersonal import WindowPersonal
 from src.WindowStudent import WindowStudent
 
-
-
+#projenin yönlendirme kısmı bu sınıftan yapılıyor
 class Admin(object):
-
     def __init__(self):
         self.admin()
         pass
 
-
-
-
     def ogrenci_ekle(self):
-
-
-
-
+        #öğrenci ekleme fonksiyonu burdan pencere açılıyor
         print("Öğrenci Kayıt Ekranı..\n")
         studentpencere = WindowStudent()
         studentpencere.pencere_ac()
         self.student_menu()
 
     def ogrenciSil(self):
+        # öğrenci silme fonksiyonu burdan delete data sınıfını çalıştırıyor
         tc = input("Silmek  istediğiniz öğrencinin tc kimlik numarasını giriniz : \n")
         DeleteData().delete_student(tc)
-        print("Öğrenci kaydı silindi..")
         input("Çıkamk için herhangi bir tuşa basınız : \n")
 
     def ogrenciAra(self):
+        #tc kimlik numarasına göre arama yapan fonksiyon
         tc = input("Ulaşmak istediğiniz öğrencinin tc kimlik numarasını giriniz : \n")
         student = GetData().student_bul(tc)
         print("Öğrenci bilgiler..")
@@ -48,16 +40,16 @@ class Admin(object):
         print(f'Veli gsm : {student.getVeli_gsm()}')
         print(f'Veli adres : {student.getVeli_address()}')
         print(f'Kayıt tarihi : {student.getKayıt_tarihi()}')
-
         input("Çıkamk için herhangi bir tuşa basınız : \n")
 
     def personal_sil(self):
+        # tc kimlik numarasına göre silme yapan fonksiyon
         tc = input("Silmek istediğiniz öğrencinin tc kimlik numarasını giriniz : \n")
         DeleteData().delete_personal(tc)
-        print("Personel kaydı silindi..")
         input("Çıkamk için herhangi bir tuşa basınız : \n")
 
     def personalekle(self):
+        #personel ekleme fonksiyonu
         print("Personal Kayıt Ekranı..\n")
         personal_pencere = WindowPersonal()
         personal_pencere.pencere_ac()
@@ -65,6 +57,7 @@ class Admin(object):
         self.personal_menu()
 
     def personal_ara(self):
+        #tc kimlik numarasına göre silme yapan fonksiyon
         secim = input("Ulaşmak istediğiniz personelin tc kimlik numarasını giriniz : \n")
         personal = GetData().personal_bul(secim)
         print("Personel bilgiler..")
@@ -79,6 +72,7 @@ class Admin(object):
         input("Çıkamk için herhanfi bir tuşa basınız : \n")
 
     def student_menu(self):
+        #öğrenci menusu
         while True:
             menu_veri = xml.parse("data/menu_student.xml")
             kok = menu_veri.getroot()
@@ -94,14 +88,14 @@ class Admin(object):
             elif secim == "3":
                 self.ogrenciAra()
             elif secim == "4":
-                pass
-            elif secim == "5":
                 self.admin()
+
             else:
                 print("\nMenu elemanlarından birini seçiniz...\n")
                 continue
 
     def personal_menu(self):
+        #personel menusu
         while True:
             menu_veri = xml.parse("data/menu_personal.xml")
             kok = menu_veri.getroot()
@@ -125,6 +119,7 @@ class Admin(object):
                 continue
 
     def admin(self):
+        #admin fonksiyonu giriş bilgileri doğruysa ana menu ye götürüyor
         while True:
             print("Admin Giriş\n")
             tc = input("Tc kimlik numarası:\n")

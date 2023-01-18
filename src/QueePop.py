@@ -2,7 +2,7 @@ from xml.etree.ElementTree import ElementTree
 
 from src.DbPush import DbPush
 
-
+#eğer yurtta kalan herhangi bir öğrenci silindiğinde eğer bekleyen varsa yurda kayıt yapılır, aynı zamanda kayıt yaptıktan sonra dosyadan çıkar
 class QueePop:
     def __init__(self):
         self.tree = ElementTree()

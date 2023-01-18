@@ -1,7 +1,7 @@
 from src.Contact import Contact
 from src.Human import Human
 
-
+#personal sınıfı hem insandan hem iletişim sınıfından kalıtım alıyor aynı zamanda çoklu kalıtım yapıyoruz
 class Personal(Human, Contact):
     def __init__(self, ad, tc, yas, dogum_tarihi, unvan, gorevi, mail):
         Human.__init__(self, ad, tc, yas, dogum_tarihi)

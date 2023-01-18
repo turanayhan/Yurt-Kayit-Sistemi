@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-
+#insan sınıfı aynı zamanda abstract class
 class Human(ABC):
     # Constructor
     def __init__(self, ad, tc, yas, dogum_tarihi):

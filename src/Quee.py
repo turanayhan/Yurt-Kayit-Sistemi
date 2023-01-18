@@ -1,4 +1,6 @@
 import xml.etree.ElementTree as ET
+
+#kuyruk sınıfı eğer yurt kapasitesi dolduğunda burası çalışıyor öğrenciyi yedekler dosyasına kaydediyor
 class Quee:
     def __init__(self):
         pass

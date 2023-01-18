@@ -2,13 +2,14 @@ import xml.etree.ElementTree as ET
 
 from datetime import date
 
-
+#verileri xml kaydetme sınıfı
 class DbPush:
     def __init__(self):
         pass
 
     def student_kaydet(self, ad_, tc_, yas_, dg_tarihi_, okul_, bolum_, gsm_, mail_, veli_ad_, veli_gsm_, veli_address_,
                        kayit_tarihi_):
+        #öğrenci kaydetme fonksiyonu
 
 
 
@@ -49,6 +50,8 @@ class DbPush:
             studentData.write("data/database.xml", encoding="UTF-8")
 
     def Personal_kaydet(self, ad_, tc_, yas_, dg_tarihi_, unvan_, gorevi_, mail_):
+        # personel kaydetme fonksiyonu
+
         personalData = ET.parse("data/database.xml")
         # En üst seviye XML etiketinin ne olduğunu bulalım
         kok = personalData.getroot()

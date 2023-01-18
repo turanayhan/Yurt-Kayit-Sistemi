@@ -1,11 +1,47 @@
 <data>
     <Öğrenciler>
 
-
-<id32><Tc>32</Tc><Ad>Fdntd</Ad><Yas>Ssfdbf</Yas><DogumTarihi>Fb</DogumTarihi><Gsm>Db</Gsm><Mail>Dfbbdd</Mail><Okul>Turgut özal üniversitesi</Okul><Bolum>Dfbf</Bolum><VeliAd>Dfdfb</VeliAd><VeliGsm>Dfbf</VeliGsm><VeliAddress>Dfbf</VeliAddress><KayitTarihi>2023-01-17 11:23:37.840235</KayitTarihi></id32><idEgges><Tc>Egges</Tc><Ad>Aefge</Ad><Yas>Gse</Yas><DogumTarihi>Ges</DogumTarihi><Gsm>Egs</Gsm><Mail>Sege</Mail><Okul>İnöü üniversitesi</Okul><Bolum>Segseg</Bolum><VeliAd>Sgsegges</VeliAd><VeliGsm>Egsges</VeliGsm><VeliAddress>Egsges</VeliAddress><KayitTarihi>2023-01-17 13:05:52.325514</KayitTarihi></idEgges><idEsb><Tc>Esb</Tc><Ad>Segs</Ad><Yas>Ebsb</Yas><DogumTarihi>Bes</DogumTarihi><Gsm>Eb</Gsm><Mail>Ebesb</Mail><Okul>İnöü üniversitesi</Okul><Bolum>Sebse</Bolum><VeliAd>Esb</VeliAd><VeliGsm>Esbes</VeliGsm><VeliAddress>Bbe</VeliAddress><KayitTarihi>2023-01-17 13:08:58.707395</KayitTarihi></idEsb></Öğrenciler>
+        <id60940508158>
+            <Tc>60940508158</Tc>
+            <Ad>Turan ayhan</Ad>
+            <Yas>22</Yas>
+            <DogumTarihi>1999</DogumTarihi>
+            <Gsm>05452590511</Gsm>
+            <Mail>Duranayhan57@gmail.com</Mail>
+            <Okul>İnöü üniversitesi</Okul>
+            <Bolum>Bilgisayar mühendisliği</Bolum>
+            <VeliAd>Ibrahim ayhan</VeliAd>
+            <VeliGsm>05366307326</VeliGsm>
+            <VeliAddress>Malatya</VeliAddress>
+            <KayitTarihi>2023-01-18 18:47:46.923768</KayitTarihi>
+        </id60940508158>
+        <id112132141435>
+            <Tc>112132141435</Tc>
+            <Ad>Yasin demirel</Ad>
+            <Yas>20</Yas>
+            <DogumTarihi>2002</DogumTarihi>
+            <Gsm>234235235</Gsm>
+            <Mail>Yasin123@gmail.com</Mail>
+            <Okul>İnöü üniversitesi</Okul>
+            <Bolum>Bilgisayar mühendisliği</Bolum>
+            <VeliAd>Wegweg</VeliAd>
+            <VeliGsm>Wgegew</VeliGsm>
+            <VeliAddress>Rege</VeliAddress>
+            <KayitTarihi>2023-01-18 18:48:56.187342</KayitTarihi>
+        </id112132141435>
+    </Öğrenciler>
 
     <Personeller>
 
-<idBf><Tc>Bf</Tc><Ad>Dfb</Ad><Yas>Db</Yas><DogumTarihi>Bffb</DogumTarihi><Unvan>Bdfbbd</Unvan><Gorevi>Fdfb</Gorevi><Mail>Fdfb</Mail></idBf></Personeller>
+        <id123445>
+            <Tc>123445</Tc>
+            <Ad>Ali</Ad>
+            <Yas>23</Yas>
+            <DogumTarihi>1999</DogumTarihi>
+            <Unvan>Yok</Unvan>
+            <Gorevi>Yok</Gorevi>
+            <Mail>Deneme@gmail.com</Mail>
+        </id123445>
+    </Personeller>
 
 </data>

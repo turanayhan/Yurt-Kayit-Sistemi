@@ -4,7 +4,7 @@ from tkinter import messagebox
 from src.SaveData import SaveData
 import datetime
 
-
+#personel artayüzünü çalıştıran sınıf
 class WindowPersonal(tkinter.Tk):
 
     def __init__(self):

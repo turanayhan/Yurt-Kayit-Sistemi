@@ -4,6 +4,9 @@ from tkinter import messagebox
 from src.SaveData import SaveData
 import datetime
 
+
+
+#öğrenci arayüzünü çalıştıran sınıf
 class WindowStudent(tkinter.Tk):
 
     def __init__(self):

@@ -4,7 +4,7 @@ from src.Quee import Quee
 from src.Student import Student
 
 
-
+#bu sınıfta kapasite kontrolü yapılıur eğer yer varsa databse kaydedilir eğer yer yoksa yedeklere alınır
 class SaveData():
     def __init__(self):
         self.okuma=open("data/capacity.txt","r").read()
@@ -71,6 +71,7 @@ class SaveData():
 
 
     def personalsave(self, ad, tc, yas, dogum_tarihi, unvan, gorevi, mail):
+        #personelin kaydedilidiği fonksiyon
         personal = Personal(ad.capitalize(), tc.capitalize(), yas.capitalize(), dogum_tarihi.capitalize(),
                             unvan.capitalize(), gorevi.capitalize(), mail.capitalize())
         self.set_data2(personal)
